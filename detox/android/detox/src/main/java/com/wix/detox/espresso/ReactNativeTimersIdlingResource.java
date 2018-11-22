@@ -128,7 +128,6 @@ public class ReactNativeTimersIdlingResource implements IdlingResource, Choreogr
     @Override
     public void registerIdleTransitionCallback(ResourceCallback callback) {
         this.callback = callback;
-
         Choreographer.getInstance().postFrameCallback(this);
     }
 
